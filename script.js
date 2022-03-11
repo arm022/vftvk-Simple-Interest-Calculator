@@ -5,7 +5,7 @@ function compute()
     var principal = document.getElementById("principal").value;
 
     //we check if the principal amount is appropriate or not
-    if(principal<=0){
+    if(principal<=0 || principal==""){
         alert("Please enter amount greater then zero");
         principal.focus();
         return false;
